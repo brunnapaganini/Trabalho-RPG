@@ -27,102 +27,95 @@ public class TelaSegunda extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        labelTituloDois = new javax.swing.JLabel();
+        labelTituloUm = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        buttonAvancar = new javax.swing.JButton();
-        buttonVoltar = new javax.swing.JButton();
+        textHistoria = new javax.swing.JTextArea();
+        buttonEnfrentar = new javax.swing.JButton();
+        buttonExplorar = new javax.swing.JButton();
+        labelFoto = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Night");
+        labelTituloDois.setBackground(new java.awt.Color(255, 255, 255));
+        labelTituloDois.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        labelTituloDois.setForeground(new java.awt.Color(255, 255, 255));
+        labelTituloDois.setText("Night");
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("The");
-
-        jLabel1.setText("jLabel1");
+        labelTituloUm.setBackground(new java.awt.Color(255, 255, 255));
+        labelTituloUm.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        labelTituloUm.setForeground(new java.awt.Color(255, 255, 255));
+        labelTituloUm.setText("The");
 
         jScrollPane1.setToolTipText("");
 
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setColumns(20);
-        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Você segue pelo caminho indicado e encontra uma \nentrada secreta para uma cripta subterrânea. A atmosfera \nmuda drasticamente: o ar é frio e uma luz tênue ilumina os \ncorredores. Dentro, várias portas trancadas revelam salas \nde mistérios antigos. Ao entrar em uma dessas salas, \nvocê se depara com uma Entidade Sombria");
-        jScrollPane1.setViewportView(jTextArea1);
+        textHistoria.setBackground(new java.awt.Color(0, 0, 0));
+        textHistoria.setColumns(20);
+        textHistoria.setForeground(new java.awt.Color(255, 255, 255));
+        textHistoria.setRows(5);
+        textHistoria.setText("Você derrotou o guardião da terra e seguiu pela trilha da\nfortaleza entrando para explorar. No meio da exploração \nvocê encontra uma entrada secreta para uma cripta subterrânea.\nDentro, várias portas trancadas revelam\nsalas de mistérios antigos. Ao entrar em uma dessas salas, \nvocê se depara com um Guardião. \nVocê precisa escolher entre enfrentar o guardião ou explorar\no resto da fortaleza! O que você decide?");
+        jScrollPane1.setViewportView(textHistoria);
 
-        buttonAvancar.setBackground(new java.awt.Color(0, 0, 0));
-        buttonAvancar.setForeground(new java.awt.Color(204, 204, 0));
-        buttonAvancar.setText("Avançar");
-        buttonAvancar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 0)));
-        buttonAvancar.addActionListener(new java.awt.event.ActionListener() {
+        buttonEnfrentar.setBackground(new java.awt.Color(0, 0, 0));
+        buttonEnfrentar.setForeground(new java.awt.Color(204, 204, 0));
+        buttonEnfrentar.setText("Enfrentar");
+        buttonEnfrentar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 0)));
+        buttonEnfrentar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonAvancarActionPerformed(evt);
+                buttonEnfrentarActionPerformed(evt);
             }
         });
 
-        buttonVoltar.setBackground(new java.awt.Color(0, 0, 0));
-        buttonVoltar.setForeground(new java.awt.Color(204, 204, 0));
-        buttonVoltar.setText("Voltar");
-        buttonVoltar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 0)));
-        buttonVoltar.addActionListener(new java.awt.event.ActionListener() {
+        buttonExplorar.setBackground(new java.awt.Color(0, 0, 0));
+        buttonExplorar.setForeground(new java.awt.Color(204, 204, 0));
+        buttonExplorar.setText("Explorar");
+        buttonExplorar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 0)));
+        buttonExplorar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonVoltarActionPerformed(evt);
+                buttonExplorarActionPerformed(evt);
             }
         });
+
+        labelFoto.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Downloads\\7cc8c2f223c9d9bba771f3b8d447aabb.jpg")); // NOI18N
+        labelFoto.setText("jLabel1");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 28, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(23, 23, 23))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(buttonVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(buttonAvancar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31))))
+            .addComponent(labelFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel2)
+                        .addComponent(labelTituloUm)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(166, 166, 166)
-                        .addComponent(jLabel1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(labelTituloDois))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(buttonExplorar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(buttonEnfrentar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(37, 37, 37)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(labelFoto)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelTituloDois, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelTituloUm))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonAvancar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30))
+                    .addComponent(buttonEnfrentar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonExplorar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -139,15 +132,15 @@ public class TelaSegunda extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void buttonAvancarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAvancarActionPerformed
-        new TelaBatalhaUm().setVisible(true);
+    private void buttonEnfrentarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonEnfrentarActionPerformed
+        new TelaBatalhaDois().setVisible(true);
             this.dispose();
-    }//GEN-LAST:event_buttonAvancarActionPerformed
+    }//GEN-LAST:event_buttonEnfrentarActionPerformed
 
-    private void buttonVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonVoltarActionPerformed
-        new TelaInicio().setVisible(true);
+    private void buttonExplorarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonExplorarActionPerformed
+        new TelaSegunda2().setVisible(true);
             this.dispose();
-    }//GEN-LAST:event_buttonVoltarActionPerformed
+    }//GEN-LAST:event_buttonExplorarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -185,13 +178,13 @@ public class TelaSegunda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buttonAvancar;
-    private javax.swing.JButton buttonVoltar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton buttonEnfrentar;
+    private javax.swing.JButton buttonExplorar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel labelFoto;
+    private javax.swing.JLabel labelTituloDois;
+    private javax.swing.JLabel labelTituloUm;
+    private javax.swing.JTextArea textHistoria;
     // End of variables declaration//GEN-END:variables
 }

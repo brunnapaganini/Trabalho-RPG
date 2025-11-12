@@ -27,11 +27,10 @@ public class TelaTerceira extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        labelTituloUm = new javax.swing.JLabel();
+        labelTituloDois = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLabel1 = new javax.swing.JLabel();
+        textHistoria = new javax.swing.JTextArea();
         buttonVoltar = new javax.swing.JButton();
         buttonAvancar = new javax.swing.JButton();
 
@@ -39,26 +38,24 @@ public class TelaTerceira extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("The");
+        labelTituloUm.setBackground(new java.awt.Color(255, 255, 255));
+        labelTituloUm.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        labelTituloUm.setForeground(new java.awt.Color(255, 255, 255));
+        labelTituloUm.setText("The");
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Night");
+        labelTituloDois.setBackground(new java.awt.Color(255, 255, 255));
+        labelTituloDois.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        labelTituloDois.setForeground(new java.awt.Color(255, 255, 255));
+        labelTituloDois.setText("Night");
 
         jScrollPane1.setToolTipText("");
 
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setColumns(20);
-        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea1.setRows(5);
-        jTextArea1.setText("O aventureiro chega a uma grande torre no topo de uma \nmontanha, onde o Vigilante Final o aguarda. O Vigilante é \numa criatura misteriosa que protege um grande segredo \nsobre o mundo. Quando o aventureiro chega, o Vigilante diz: \n\"Você chegou até aqui, mas não sabe o que está realmente \nem jogo. A verdade por trás desta terra não é o que parece, e \nagora, você terá que escolher entre destruir ou salvar o que \nestá oculto.\"");
-        jScrollPane1.setViewportView(jTextArea1);
-
-        jLabel1.setText("jLabel1");
+        textHistoria.setBackground(new java.awt.Color(0, 0, 0));
+        textHistoria.setColumns(20);
+        textHistoria.setForeground(new java.awt.Color(255, 255, 255));
+        textHistoria.setRows(5);
+        textHistoria.setText("O aventureiro chega a uma grande torre no topo de uma \nmontanha, onde o Vigilante Final o aguarda. O Vigilante é \numa criatura misteriosa que protege um grande segredo \nsobre o mundo. Quando o aventureiro chega, o Vigilante diz: \n\"Você chegou até aqui, mas não sabe o que está realmente \nem jogo. A verdade por trás desta terra não é o que parece, e \nagora, você terá que escolher entre destruir ou salvar o que \nestá oculto.\"");
+        jScrollPane1.setViewportView(textHistoria);
 
         buttonVoltar.setBackground(new java.awt.Color(0, 0, 0));
         buttonVoltar.setForeground(new java.awt.Color(204, 204, 0));
@@ -85,16 +82,11 @@ public class TelaTerceira extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(159, 159, 159)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(12, 12, 12)
+                .addComponent(labelTituloUm)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(labelTituloDois)
+                .addContainerGap(310, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 28, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -112,11 +104,9 @@ public class TelaTerceira extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(37, 37, 37)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(labelTituloUm)
+                    .addComponent(labelTituloDois, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -187,11 +177,10 @@ public class TelaTerceira extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonAvancar;
     private javax.swing.JButton buttonVoltar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel labelTituloDois;
+    private javax.swing.JLabel labelTituloUm;
+    private javax.swing.JTextArea textHistoria;
     // End of variables declaration//GEN-END:variables
 }

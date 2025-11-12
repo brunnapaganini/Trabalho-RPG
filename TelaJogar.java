@@ -27,148 +27,143 @@ public class TelaJogar extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        buttonDice = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        buttonPlay = new javax.swing.JButton();
-        buttonHero = new javax.swing.JButton();
+        labelTituloDois = new javax.swing.JLabel();
+        labelTituloUm = new javax.swing.JLabel();
+        labelNome = new javax.swing.JLabel();
+        labelVida = new javax.swing.JLabel();
+        labelMana = new javax.swing.JLabel();
+        labelForca = new javax.swing.JLabel();
+        labelAgilidade = new javax.swing.JLabel();
+        buttonDado = new javax.swing.JButton();
+        buttonIniciar = new javax.swing.JButton();
+        labelFoto = new javax.swing.JLabel();
+        boxPersonagem = new javax.swing.JComboBox<>();
+        labelBarbaro = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Night");
+        labelTituloDois.setBackground(new java.awt.Color(255, 255, 255));
+        labelTituloDois.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        labelTituloDois.setForeground(new java.awt.Color(255, 255, 255));
+        labelTituloDois.setText("Night");
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("The");
+        labelTituloUm.setBackground(new java.awt.Color(255, 255, 255));
+        labelTituloUm.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        labelTituloUm.setForeground(new java.awt.Color(255, 255, 255));
+        labelTituloUm.setText("The");
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Nome:");
+        labelNome.setBackground(new java.awt.Color(255, 255, 255));
+        labelNome.setForeground(new java.awt.Color(255, 255, 255));
+        labelNome.setText("Nome:");
 
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Vida");
+        labelVida.setBackground(new java.awt.Color(255, 255, 255));
+        labelVida.setForeground(new java.awt.Color(255, 255, 255));
+        labelVida.setText("Vida");
 
-        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Mana:");
+        labelMana.setBackground(new java.awt.Color(255, 255, 255));
+        labelMana.setForeground(new java.awt.Color(255, 255, 255));
+        labelMana.setText("Mana:");
 
-        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Força:");
+        labelForca.setBackground(new java.awt.Color(255, 255, 255));
+        labelForca.setForeground(new java.awt.Color(255, 255, 255));
+        labelForca.setText("Força:");
 
-        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Agilidade:");
+        labelAgilidade.setBackground(new java.awt.Color(255, 255, 255));
+        labelAgilidade.setForeground(new java.awt.Color(255, 255, 255));
+        labelAgilidade.setText("Agilidade:");
 
-        buttonDice.setBackground(new java.awt.Color(0, 0, 0));
-        buttonDice.setForeground(new java.awt.Color(204, 204, 0));
-        buttonDice.setText("Girar Dado");
-        buttonDice.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 0)));
+        buttonDado.setBackground(new java.awt.Color(0, 0, 0));
+        buttonDado.setForeground(new java.awt.Color(204, 204, 0));
+        buttonDado.setText("Girar Dado");
+        buttonDado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 0)));
 
-        jLabel10.setText("jLabel10");
-
-        jLabel11.setText("jLabel11");
-
-        jLabel12.setText("jLabel12");
-
-        buttonPlay.setBackground(new java.awt.Color(0, 0, 0));
-        buttonPlay.setForeground(new java.awt.Color(204, 204, 0));
-        buttonPlay.setText("Jogar");
-        buttonPlay.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 0)));
-        buttonPlay.addActionListener(new java.awt.event.ActionListener() {
+        buttonIniciar.setBackground(new java.awt.Color(0, 0, 0));
+        buttonIniciar.setForeground(new java.awt.Color(204, 204, 0));
+        buttonIniciar.setText("Iniciar");
+        buttonIniciar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 0)));
+        buttonIniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonPlayActionPerformed(evt);
+                buttonIniciarActionPerformed(evt);
             }
         });
 
-        buttonHero.setBackground(new java.awt.Color(0, 0, 0));
-        buttonHero.setForeground(new java.awt.Color(204, 204, 0));
-        buttonHero.setText("Escolha Herói");
-        buttonHero.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 0)));
+        labelFoto.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Downloads\\360_F_1574007791_mJ0O9iP2e4YFeNWgrFei9eXgYQaoEVKx.jpg")); // NOI18N
+        labelFoto.setText("jLabel8");
+
+        boxPersonagem.setBackground(new java.awt.Color(0, 0, 0));
+        boxPersonagem.setForeground(new java.awt.Color(153, 153, 0));
+        boxPersonagem.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bárbaro", "Mago", "Ladino", "Arqueiro" }));
+        boxPersonagem.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 0)));
+
+        labelBarbaro.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Downloads\\428efb63b5961cc5bb6f312239ef1242a2c2dcc1r1-564-612v2_hq.jpg")); // NOI18N
+        labelBarbaro.setText("jLabel1");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(labelFoto, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(156, 156, 156)
-                .addComponent(jLabel12)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(23, Short.MAX_VALUE)
-                        .addComponent(buttonPlay, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
-                                .addComponent(jLabel11)
-                                .addGap(33, 33, 33)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel10))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel3)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(buttonHero)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(buttonDice)))))
-                .addGap(23, 23, 23))
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(labelTituloUm)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(labelTituloDois))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(boxPersonagem, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(labelNome)
+                                .addComponent(labelAgilidade)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(labelMana)
+                                        .addComponent(labelForca)
+                                        .addComponent(labelVida))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(buttonDado, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addComponent(labelBarbaro, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(54, 54, 54))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(79, 79, 79)
+                .addComponent(buttonIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(82, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(17, 17, 17)
-                .addComponent(jLabel12)
-                .addGap(62, 62, 62)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonDice)
-                    .addComponent(buttonHero))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(labelFoto)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel11))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(buttonPlay, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                    .addComponent(labelTituloUm)
+                    .addComponent(labelTituloDois, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(boxPersonagem, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(labelBarbaro))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(labelNome)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(labelVida)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(labelMana)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(labelForca))
+                            .addComponent(buttonDado, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(5, 5, 5)
+                        .addComponent(labelAgilidade)))
+                .addGap(18, 18, 18)
+                .addComponent(buttonIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -185,10 +180,10 @@ public class TelaJogar extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void buttonPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPlayActionPerformed
+    private void buttonIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIniciarActionPerformed
         new TelaInicio().setVisible(true);
             this.dispose();
-    }//GEN-LAST:event_buttonPlayActionPerformed
+    }//GEN-LAST:event_buttonIniciarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -226,19 +221,18 @@ public class TelaJogar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buttonDice;
-    private javax.swing.JButton buttonHero;
-    private javax.swing.JButton buttonPlay;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JComboBox<String> boxPersonagem;
+    private javax.swing.JButton buttonDado;
+    private javax.swing.JButton buttonIniciar;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel labelAgilidade;
+    private javax.swing.JLabel labelBarbaro;
+    private javax.swing.JLabel labelForca;
+    private javax.swing.JLabel labelFoto;
+    private javax.swing.JLabel labelMana;
+    private javax.swing.JLabel labelNome;
+    private javax.swing.JLabel labelTituloDois;
+    private javax.swing.JLabel labelTituloUm;
+    private javax.swing.JLabel labelVida;
     // End of variables declaration//GEN-END:variables
 }
