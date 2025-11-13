@@ -43,7 +43,18 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="labelFoto" alignment="0" pref="0" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane1" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="buttonAbandonar" min="-2" pref="139" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="buttonBatalhar" min="-2" pref="139" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              </Group>
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="labelTituloUm" min="-2" max="-2" attributes="0"/>
@@ -52,36 +63,28 @@
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jScrollPane1" max="32767" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <Component id="buttonAbandonar" min="-2" pref="139" max="-2" attributes="0"/>
-                          <EmptySpace pref="80" max="32767" attributes="0"/>
-                          <Component id="buttonBatalhar" min="-2" pref="139" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="labelFoto" min="-2" pref="287" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="labelTituloUm" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="labelTituloDois" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="labelTituloUm" min="-2" max="-2" attributes="0"/>
+                      <Component id="labelTituloDois" min="-2" pref="34" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" pref="173" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="193" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="buttonAbandonar" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="buttonBatalhar" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="27" max="32767" attributes="0"/>
+                  <EmptySpace pref="26" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -156,7 +159,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Voc&#xea; se encontra em um vasto e misterioso &#xa;territ&#xf3;rio, onde o clima e o ambiente mudam a cada passo. &#xa;O terreno &#xe9; &#xe1;rido e estranho, e, ao longe, voc&#xea; avista uma &#xa;grande estrutura que parece ser uma fortaleza abandonada. &#xa;Antes de seguir em frente, um ser misterioso aparece adiante.&#xa;Ele diz que s&#xf3; poder&#xe1; seguir em frente se &#xa;enfrentar desafios e derrotar os guardi&#xf5;es desta terra.  O &#xa;ser tamb&#xe9;m deixa claro que a jornada est&#xe1; cheia de perigos,&#xa;e voc&#xea; ter&#xe1; de decidir se est&#xe1; disposto a continuar e enfrentar &#xa;o guardi&#xe3;o ou abandonar a miss&#xe3;o."/>
+                <Property name="text" type="java.lang.String" value="Voc&#xea; se encontra em um vasto e misterioso &#xa;territ&#xf3;rio. Ao longe, voc&#xea; avista uma grande estrutura que &#xa;parece ser uma fortaleza abandonada. &#xa;Antes de seguir em frente, um ser misterioso aparece adiante.&#xa;Ele diz que s&#xf3; poder&#xe1; seguir em frente se &#xa;enfrentar desafios e derrotar os guardi&#xf5;es desta terra. &#xa;Voc&#xea; continuar e enfrentar o guardi&#xe3;o ou &#xa;abandonar a miss&#xe3;o."/>
               </Properties>
             </Component>
           </SubComponents>
@@ -182,12 +185,11 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAbandonarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="labelFoto">
+        <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\User\Downloads\slide1.jpg"/>
+              <Image iconType="2" name="C:\Users\BRUNNAPAGANINIBERTOL\Documents\Fortaleza An&#xe3; por JKRoots (1).jpg"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
         </Component>
       </SubComponents>
